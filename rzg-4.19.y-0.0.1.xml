@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/openembedded" name="oe"/>
+  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="git://github.com/renesas-rz"  name="RZ"/>
+  <remote fetch="git://git.linaro.org/openembedded"  name="linaro"/>
+  <remote fetch="https://bitbucket.logicpd.com/scm/logyo/"  name="beacon"/>
+  <remote fetch="https://bitbucket.logicpd.com/scm/rdpar/"  name="third"/>
+
+  <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="rocko" name="meta-gplv2" path="sources/meta-gplv2"/>
+
+  <project remote="linaro" revision="rocko" name="meta-linaro" path="sources/meta-linaro"/>
+
+  <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="QT5" revision="rocko" name="meta-qt5" path="sources/meta-qt5" />
+
+  <project remote="RZ" revision="8ec7f6964305a923926e33def778c3e703500b00" name="meta-rzg2" path="sources/meta-rzg2"/>
+
+  <project remote="beacon" revision="lpd_master" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
+
+  <project remote="third" revision="master" name="renesas-proprietary" path="sources/renesas-proprietary"/>
+
+</manifest>
