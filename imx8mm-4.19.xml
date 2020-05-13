@@ -12,6 +12,7 @@
   <remote fetch="git://github.com/meta-rust"  name="rust"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
   <remote fetch="https://bitbucket.logicpd.com/scm/logyo/"  name="beacon"/>
+  <remote fetch="https://bitbucket.logicpd.com/scm/rdpar/"  name="third"/>
 
   <project remote="yocto" revision="6d2e12e79211b31cdf5ea824fb9a8be54ba9a9eb" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="2142f7ded1b3115ccc21f7575fd83e2376247193" name="meta-freescale" path="sources/meta-freescale"/>
@@ -39,8 +40,7 @@
 
   <project remote="beacon" revision="e0f4acbc9c15ee214f245938b719ba6aeb36f3bb" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
   <project remote="beacon" revision="2b423f2bd02b14900f46809f232af7a9e23a7134" name="meta-beacon-common" path="sources/meta-beacon-common"/>
-  <project remote="beacon" revision="57ed405f87bc4e5d6a68398c961982971e4ef5f6" name="meta-imx-aacp" path="sources/meta-imx-aacp"/>
   <project remote="beacon" revision="d4b02b5b03374d665d19a983f161403fd08961c5" name="meta-laird-cp" path="sources/meta-laird-cp"/>
-
+  <project remote="third" revision="57ed405f87bc4e5d6a68398c961982971e4ef5f6" name="meta-imx-aacp" path="sources/meta-imx-aacp"/>
 
 </manifest>
