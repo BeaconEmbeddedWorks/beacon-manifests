@@ -18,15 +18,16 @@
 
   <project remote="oe" revision="rocko" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="QT5" revision="rocko" name="meta-qt5" path="sources/meta-qt5" />
+  <project remote="QT5" revision="c1b0c9f546289b1592d7a895640de103723a0305" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="RZ" revision="8ec7f6964305a923926e33def778c3e703500b00" name="meta-rzg2" path="sources/meta-rzg2"/>
+  <project remote="RZ" revision="refs/tags/BSP-1.0.4" name="meta-rzg2" path="sources/meta-rzg2"/>
 
-  <project remote="beacon" revision="lpd_master" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
+  <project remote="beacon" revision="beacon_master" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
 
-  <project remote="third" revision="master" name="renesas-proprietary" path="sources/renesas-proprietary"/>
+  <project remote="third" revision="refs/tags/BSP-1.0.4" name="renesas-proprietary" path="sources/renesas-proprietary"/>
 
-  <project remote="beacon" revision="471f48a2fe665de4e1f44c378d532ad423e0eea0" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="515d61245193e582f364d55c98272263cc5d0351" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+
   <project remote="beacon" revision="91328f54c3b10850b63d66412654e711f1d35817" name="meta-laird-cp" path="sources/meta-laird-cp"/>
   <project remote="beacon" revision="3e9b6e69d5587b130750289b1cad11d342706f16" name="laird-firmware" path="release"/>
 
