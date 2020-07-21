@@ -12,7 +12,12 @@ To update a *-master branch, create a *-dev branch to develop with, then use a P
 | Branch                    | Purpose                 |
 |---------------------------|-------------------------|
 |branch link|description of purpose|
-|\<vendor>-\<chipset>-\<meta>-master|[link](.)|
+|[\<vendor>-\<chipset>-\<meta>-master](https://github.com/BeaconEmbeddedWorks/beacon-manifests-private/tree/vendor-chipset-thud-master)|description, maybe a link to a project page?|
+|[nxp-imx8mm-warrior-master](https://github.com/BeaconEmbeddedWorks/beacon-manifests-private/tree/nxp-imx8mm-warrior-master)|Phoenix Master|
+|[nxp-imx8mm-warrior-dev](https://github.com/BeaconEmbeddedWorks/beacon-manifests-private/tree/nxp-imx8mm-warrior-dev)|Phoenix Development|
+|[renasas-rzg2-rocko-master](https://github.com/BeaconEmbeddedWorks/beacon-manifests-private/tree/renasas-rzg2-rocko-master)|ReneSOM Master|
+|[renasas-rzg2-rocko-dev](https://github.com/BeaconEmbeddedWorks/beacon-manifests-private/tree/renasas-rzg2-rocko-dev)|ReneSOM Development|
+
 
 ## Releases
 The following tags contain manifests describing specific project releases.
@@ -21,7 +26,8 @@ Use tags to annotate versions for testing and/or release. The name should match 
 
 | Branch                    | Purpose                 |
 |---------------------------|-------------------------|
-|tag-link|release description|[link](.)|
+|tag-link|release description|description, maybe a link to the GitHub Release?|
 
-## Deployment to public repo
-TBD
+## Deployment to public repo **Under Construction**
+
+When it's time to release a version to the [public repo](https://github.com/BeaconEmbeddedWorks/beacon-manifests-public), a script (to be developed) will run that edits the manifest file and removes the layers/projects that reside on internal servers. The script then pushes and tags the edited file to the public repo. Branching schema for the public repo TBD as well as its README.
