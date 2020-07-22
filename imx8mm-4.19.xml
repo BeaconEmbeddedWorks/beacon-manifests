@@ -39,10 +39,12 @@
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
 
-  <project remote="beacon" revision="e94a812ca1ddc897d874d3c221647e3087075c32" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
-  <project remote="beacon" revision="2b423f2bd02b14900f46809f232af7a9e23a7134" name="meta-beacon-common" path="sources/meta-beacon-common"/>
-  <project remote="beacon" revision="d4b02b5b03374d665d19a983f161403fd08961c5" name="meta-laird-cp" path="sources/meta-laird-cp"/>
-  <project remote="third" revision="57ed405f87bc4e5d6a68398c961982971e4ef5f6" name="meta-imx-aacp" path="sources/meta-imx-aacp"/>
-  <project remote="beacon-internal" revision="3e9b6e69d5587b130750289b1cad11d342706f16" name="laird-firmware" path="release"/>
+  <!-- revision attribute can be refs/heads/<branch>, refs/tags/<tag>, or a SHA1 -->
+  <!-- See https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md#Element-project -->
+  <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-beacon-nxp"    path="sources/meta-beacon-nxp"/>
+  <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-laird-cp"      path="sources/meta-laird-cp"/>
+  <project remote="third"           revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-imx-aacp"      path="sources/meta-imx-aacp"/>
+  <project remote="beacon-internal" revision="refs/tags/beacon-imx8mm-kit-RC1" name="laird-firmware"     path="release"/>
 
 </manifest>
