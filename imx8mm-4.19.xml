@@ -45,6 +45,6 @@
   <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-beacon-common" path="sources/meta-beacon-common"/>
   <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-laird-cp"      path="sources/meta-laird-cp"/>
   <project remote="third"           revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-imx-aacp"      path="sources/meta-imx-aacp"/>
-  <project remote="beacon-internal" revision="refs/tags/beacon-imx8mm-kit-RC1" name="laird-firmware"     path="release"/>
+  <project remote="beacon-internal" revision="refs/heads/7.0.0.142"            name="laird-firmware"     path="release"/>
 
 </manifest>
