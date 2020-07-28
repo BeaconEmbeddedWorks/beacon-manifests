@@ -12,7 +12,6 @@
   <remote fetch="git://github.com/meta-rust"  name="rust"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
   <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="beacon"/>
-  <remote fetch="https://bitbucket.logicpd.com/scm/logyo/"  name="beacon-internal"/>
   <remote fetch="https://bitbucket.logicpd.com/scm/rdpar/"  name="third"/>
   <remote fetch="https://github.com/LairdCP/" name="laird"/>
 
@@ -46,6 +45,5 @@
   <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-beacon-common" path="sources/meta-beacon-common"/>
   <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-laird-cp"      path="sources/meta-laird-cp"/>
   <project remote="third"           revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-imx-aacp"      path="sources/meta-imx-aacp"/>
-  <project remote="beacon-internal" revision="refs/heads/7.0.0.142"            name="laird-firmware"     path="release"/>
 
 </manifest>
