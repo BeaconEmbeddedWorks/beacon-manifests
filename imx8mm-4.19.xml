@@ -44,6 +44,6 @@
   <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-beacon-nxp"    path="sources/meta-beacon-nxp"/>
   <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-beacon-common" path="sources/meta-beacon-common"/>
   <project remote="beacon"          revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-laird-cp"      path="sources/meta-laird-cp"/>
-  <project remote="third"           revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-imx-aacp"      path="sources/meta-imx-aacp"/>
+  <!--project remote="third"           revision="refs/tags/beacon-imx8mm-kit-RC1" name="meta-imx-aacp"      path="sources/meta-imx-aacp"/-->
 
 </manifest>
