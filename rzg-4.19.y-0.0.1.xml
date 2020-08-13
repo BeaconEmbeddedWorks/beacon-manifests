@@ -26,7 +26,7 @@
 
   <project remote="third" revision="refs/tags/BSP-1.0.4" name="renesas-proprietary" path="sources/renesas-proprietary"/>
 
-  <project remote="beacon" revision="515d61245193e582f364d55c98272263cc5d0351" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="1086d96cc391f14f99ee2ca56f9299a4416e3922" name="meta-beacon-common" path="sources/meta-beacon-common"/>
 
   <project remote="beacon" revision="91328f54c3b10850b63d66412654e711f1d35817" name="meta-laird-cp" path="sources/meta-laird-cp"/>
   <project remote="beacon" revision="3e9b6e69d5587b130750289b1cad11d342706f16" name="laird-firmware" path="release"/>
