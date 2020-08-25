@@ -10,6 +10,7 @@
   <remote fetch="git://git.linaro.org/openembedded"  name="linaro"/>
   <remote fetch="https://bitbucket.logicpd.com/scm/logyo/"  name="beacon"/>
   <remote fetch="https://bitbucket.logicpd.com/scm/rdpar/"  name="third"/>
+  <remote fetch="https://github.com/BeaconEmbeddedWorks/"  name="ghbeacon"/>
 
   <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="rocko" name="meta-gplv2" path="sources/meta-gplv2"/>
@@ -26,9 +27,9 @@
 
   <project remote="third" revision="refs/tags/BSP-1.0.4" name="renesas-proprietary" path="sources/renesas-proprietary"/>
 
-  <project remote="beacon" revision="1086d96cc391f14f99ee2ca56f9299a4416e3922" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="1bdc2cc391d66f2033e9f8913426416d3969509c" name="meta-beacon-common" path="sources/meta-beacon-common"/>
 
-  <project remote="beacon" revision="91328f54c3b10850b63d66412654e711f1d35817" name="meta-laird-cp" path="sources/meta-laird-cp"/>
-  <project remote="beacon" revision="3e9b6e69d5587b130750289b1cad11d342706f16" name="laird-firmware" path="release"/>
+  <project remote="ghbeacon" revision="19ac16d1f26ded451ab9c2c11665092866df96ce" name="meta-laird-cp" path="sources/meta-laird-cp"/>
+  <project remote="third" revision="34c8aa0d99f36b11bf684dc324f54cb2c81c484f" name="laird-firmware" path="release"/>
 
 </manifest>
