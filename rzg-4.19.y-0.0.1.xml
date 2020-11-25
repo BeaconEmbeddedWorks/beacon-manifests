@@ -25,7 +25,7 @@
 
   <project remote="beacon" revision="beacon_master" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
 
-  <project remote="third" revision="refs/tags/BSP-1.0.4" name="renesas-proprietary" path="sources/renesas-proprietary"/>
+  <project remote="third" revision="refs/tags/production-BSP-1.0.4" name="renesas-proprietary" path="sources/renesas-proprietary"/>
 
   <project remote="beacon" revision="1bdc2cc391d66f2033e9f8913426416d3969509c" name="meta-beacon-common" path="sources/meta-beacon-common"/>
 
