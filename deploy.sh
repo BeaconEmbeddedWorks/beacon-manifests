@@ -7,12 +7,20 @@ usage="Usage: ./deploy.sh <tag name to release> <manifest file>"
 
 #IMPORTANT
 #expecting to be run on products *-master branch and the script determines the destination
-#branch from that name. See the README.md in the beacon-manifests-private master branch 
+#branch by dropping -master. See the README.md in the beacon-manifests-private master branch 
 #for more information.
 
 #Expected to be in a repo with both the private and public manifest repos as remotes
 #git clone https://github.com/BeaconEmbeddedWorks/beacon-manifests-private.git
 #git remote add public https://github.com/BeaconEmbeddedWorks/beacon-manifests.git
+
+DEBUG=${DEBUG:-0}
+
+dprint() {
+        if [ $DEBUG -eq 1 ] ; then
+                echo $*
+        fi
+}
 
 #confirm remotes
 originUrl=$(git config --get remote.origin.url)
@@ -52,9 +60,8 @@ fi
 
 srcBranch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 destBranch=$(git branch | sed -n -e 's/^\* \(.*\)-.*/\1/p')
-tag=$1
-#debug 
-#echo $srcBranch $destBranch $tag
+
+dprint $srcBranch $destBranch $tag
 
 #Tag the private repo
 git tag -f -a $tag-private -m "Deploying manifest for $tag"
@@ -71,7 +78,7 @@ else
 	git checkout -B $destBranch public/main
 fi
 
-#Overwrite the manifest 
+#Create/Overwrite the manifest 
 git checkout origin/$srcBranch -- $manifest
 
 #Edit manifest xml in place preserving formatting
