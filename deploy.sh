@@ -97,7 +97,7 @@ branchExist=$(git ls-remote --heads public $destBranch | wc -l)
 if [ $branchExist == "1" ]
 then
 	echo branch exists
-	git checkout --track public/$destBranch
+	git checkout -B $destBranch public/$destBranch
 	git pull --rebase
 else
 	echo branch does not exist - starting from main
