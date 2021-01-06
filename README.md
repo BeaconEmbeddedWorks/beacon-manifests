@@ -29,7 +29,7 @@ Use tags to annotate versions for testing and/or release. The name should match 
 |tag-link|release description|description, maybe a link to the GitHub Release?|
 
 ## Deployment to the Public Repo
-When it's time to release a version to the [public repo](https://github.com/BeaconEmbeddedWorks/beacon-manifests), a script (deploy.sh) will run that edits the manifest file and removes the layers/projects that reside on internal servers. The script then pushes and tags the edited file to the public repo. Branching schema for the public repo simply maintain the initial three data of the master and dev branches.
+When it's time to release a version to the [public repo](https://github.com/BeaconEmbeddedWorks/beacon-manifests), a script (deploy.sh) will run that edits the manifest file and removes the layers/projects that reside on internal servers. The script then pushes and tags the edited file to the public repo. It also tags the private repos and updates the public versions of those repos using the current head of master. Branching schema for the public repo simply maintain the initial three data of the master and dev branches.
 
 ### Prerequisites
 Before you run the script, there should be a tag on the -master branch of the product that will be replicated to the public repo.

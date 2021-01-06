@@ -3,11 +3,15 @@
 usage="Usage: ./deploy.sh <tag name to release> <manifest file>"
 
 #Push the modified manifest to the public manifest repo and tags boths repos with the tag
-# provided in the first argument
+#provided in the first argument
+
+#Also adds tags the current head of master for each of the beacon repos listed in the manifest,
+#while also deploying a tagged copy of that head to the public facing repos and tagging that as
+#well.
 
 #IMPORTANT
 #expecting to be run on products *-master branch and the script determines the destination
-#branch by dropping -master. See the README.md in the beacon-manifests-private master branch 
+#branch by dropping -master. See the README.md in the beacon-manifests-private master branch
 #for more information.
 
 #Expected to be in a repo with both the private and public manifest repos as remotes
