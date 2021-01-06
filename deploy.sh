@@ -86,6 +86,7 @@ if [ $? == "1" ]
 then
 	echo branch exists
 	git checkout --track public/$destBranch
+	git pull
 else
 	echo branch does not exist - starting from main
 	git checkout -B $destBranch public/main
