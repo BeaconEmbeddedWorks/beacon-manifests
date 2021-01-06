@@ -101,7 +101,7 @@ git checkout origin/$srcBranch -- $manifest
 #review this part of the script and update as appropriate
 
 #need to get each private repo and run tagRepo.sh
-host=$(xmlstarlet sel -r -v "/manifest/remote[@name='beacon']/@fetch" $manifest)
+host=$(xmlstarlet sel -t -v "/manifest/remote[@name='beacon']/@fetch" $manifest)
 
 while IFS= read -r line; do
         dprint "private: $host$line.git"

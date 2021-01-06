@@ -19,19 +19,19 @@
   <project remote="oe" revision="3bdbf72e3a4bf18a4a2c7afbde4f7ab773aeded9" name="meta-openembedded" path="sources/meta-openembedded"/>
   
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
-  <project remote="OSSystems" revision="5f365ef0f842ba4651efe88787cf9c63bc8b6cb3" name="meta-browser" path="sources/meta-browser" />
+  <project remote="OSSystems" revision="5f365ef0f842ba4651efe88787cf9c63bc8b6cb3" name="meta-browser" path="sources/meta-browser"/>
   
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <project remote="QT5" revision="dc2dedef9961950b88f4245ba7499538ec4244ab" name="meta-qt5" path="sources/meta-qt5" />
+  <remote fetch="git://github.com/meta-qt5" name="QT5"/>
+  <project remote="QT5" revision="dc2dedef9961950b88f4245ba7499538ec4244ab" name="meta-qt5" path="sources/meta-qt5"/>
   
-  <remote fetch="git://github.com/TimesysGit"  name="Timesys"/>
-  <project remote="Timesys" revision="3d53df8f8c8e9d37dfc8d4b03ab4f4bdd415d3d2" name="meta-timesys" path="sources/meta-timesys" />
+  <remote fetch="git://github.com/TimesysGit" name="Timesys"/>
+  <project remote="Timesys" revision="3d53df8f8c8e9d37dfc8d4b03ab4f4bdd415d3d2" name="meta-timesys" path="sources/meta-timesys"/>
   
-  <remote fetch="git://github.com/meta-rust"  name="rust"/>
-  <project remote="rust" revision="11aed43748d7dd194dc6c06a35a16104400d1090" name="meta-rust" path="sources/meta-rust" />
+  <remote fetch="git://github.com/meta-rust" name="rust"/>
+  <project remote="rust" revision="11aed43748d7dd194dc6c06a35a16104400d1090" name="meta-rust" path="sources/meta-rust"/>
   
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
-  <project remote="CAF" revision="bb05c60e6398b374ac49554c642a3bef36452f73" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" upstream="warrior-4.19.35-1.1.0" >
+  <project remote="CAF" revision="bb05c60e6398b374ac49554c642a3bef36452f73" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" upstream="warrior-4.19.35-1.1.0">
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
@@ -43,11 +43,11 @@
   <!-- revision attribute can be refs/heads/<branch>, refs/tags/<tag>, or a SHA1 -->
   <!-- See https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md#Element-project -->
   
-  <project remote="beacon" revision="refs/tags/1.0.0-RC5" name="meta-beacon-nxp-private" path="sources/meta-beacon-nxp"/>
-  <project remote="beacon" revision="refs/tags/1.0.0-RC5" name="meta-beacon-common-private" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="refs/tags/1.0.0" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
+  <project remote="beacon" revision="refs/tags/1.0.0" name="meta-beacon-common" path="sources/meta-beacon-common"/>
   
-  <remote fetch="https://bitbucket.logicpd.com/scm/rdpar/"  name="third"/>
-  <project remote="third" revision="refs/tags/1.0.0-RC5" name="meta-imx-aacp" path="sources/meta-imx-aacp"/>
-  <project remote="third" revision="refs/tags/laird-lwb5-fcc-firmware-7.0.0.326" name="laird-firmware" path="release"/>
+  
+  
+  
 
 </manifest>
