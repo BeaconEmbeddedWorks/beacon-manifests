@@ -88,7 +88,7 @@ if [ $branchExist == "1" ]
 then
 	echo branch exists
 	git checkout --track public/$destBranch
-	git pull
+	git pull --rebase
 else
 	echo branch does not exist - starting from main
 	git checkout -B $destBranch public/main
