@@ -40,7 +40,7 @@ else
 	git fetch public
 fi
 
-#Get input
+#Get input - minimal sanity check based on presence
 if [ -z "$1" ]
 then
 	echo argument 1 must be the tag to use
@@ -56,6 +56,15 @@ then
 	exit 1
 else
 	manifest=$2
+fi
+
+manifestTag=$(xmlstarlet sel -t -v "/manifest/project[contains(@name,'-private')]/@revision" \
+	imx8mm-4.19.xml | \
+	head -1 | awk -F[/-] '{print $3}')
+if [ "$tag" != "$manifestTag" ]
+then
+	echo Argument tag does not match tag base in manifest file
+	exit 1
 fi
 
 srcBranch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
@@ -88,8 +97,17 @@ git checkout origin/$srcBranch -- $manifest
 #Remove the '-RCx' suffix from project revisions
 #File to modify
 
-#COPYING TO OTHER PRODUCT
+#COPYING TO OTHER PRODUCTS
 #review this part of the script and update as appropriate
+
+#need to get each private repo and run tagRepo.sh
+host=$(xmlstarlet sel -r -v "/manifest/remote[@name='beacon']/@fetch" $manifest)
+
+while IFS= read -r line; do
+        dprint "private: $host$line.git"
+        dprint "public: $host${line%-private}.git"
+	./tagRepo.sh $tag $host$line.git $host${line%-private}.git
+done <<< $(xmlstarlet sel -t -v "/manifest/project[contains(@name,'-private')]/@name" $manifest)
 
 xmlstarlet ed --inplace --pf \
 	-d "/manifest/remote[@name='third']" \
@@ -98,7 +116,10 @@ xmlstarlet ed --inplace --pf \
 	-u "/manifest/project[contains(@revision,'-RC')]/@revision" -x "substring-before(., '-RC')" \
 	$manifest
 
+#Add the modifed manifest
 git add $manifest
+#Don't deploy the shell scripts to public
+git rm --cached *.sh
 
 git commit -m "Deploying manifest for $tag"
 git tag -f -a $tag -m "Deploying manifest for $tag"
