@@ -34,7 +34,7 @@ then
 	echo Remote 'origin' did not match expectef
 	exit 1
 else
-	git fetch public
+	git fetch origin
 fi
 if [ "$publicUrl" != "https://github.com/BeaconEmbeddedWorks/beacon-manifests.git" ]
 then
@@ -70,6 +70,8 @@ then
 	echo Argument tag does not match tag base in manifest file
 	exit 1
 fi
+
+git fetch --all
 
 srcBranch=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 destBranch=$(git branch | sed -n -e 's/^\* \(.*\)-.*/\1/p')
