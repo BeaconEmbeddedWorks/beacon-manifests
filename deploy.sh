@@ -83,8 +83,8 @@ git tag -f -a $tag-private -m "Deploying manifest for $tag"
 git push -f origin $tag-private
 
 #check if branch exists, or start from main
-git ls-remote --heads public $destBranch | wc -l
-if [ $? == "1" ]
+branchExist=$(git ls-remote --heads public $destBranch | wc -l)
+if [ $branchExist == "1" ]
 then
 	echo branch exists
 	git checkout --track public/$destBranch
