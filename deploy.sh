@@ -78,9 +78,19 @@ destBranch=$(git branch | sed -n -e 's/^\* \(.*\)-.*/\1/p')
 
 dprint $srcBranch $destBranch $tag
 
-#Tag the private repo
+#Tag the private manifist repo
 git tag -f -a $tag-private -m "Deploying manifest for $tag"
 git push -f origin $tag-private
+
+#Tag the repos referenced by the manifest
+#need to get each private repo and run tagRepo.sh
+host=$(xmlstarlet sel -t -v "/manifest/remote[@name='beacon']/@fetch" $manifest)
+
+while IFS= read -r line; do
+        dprint "private: $host$line.git"
+        dprint "public: $host${line%-private}.git"
+	./tagRepo.sh $tag $host$line.git $host${line%-private}.git
+done <<< $(xmlstarlet sel -t -v "/manifest/project[contains(@name,'-private')]/@name" $manifest)
 
 #check if branch exists, or start from main
 branchExist=$(git ls-remote --heads public $destBranch | wc -l)
@@ -107,15 +117,7 @@ git checkout origin/$srcBranch -- $manifest
 #COPYING TO OTHER PRODUCTS
 #review this part of the script and update as appropriate
 
-#need to get each private repo and run tagRepo.sh
-host=$(xmlstarlet sel -t -v "/manifest/remote[@name='beacon']/@fetch" $manifest)
-
-while IFS= read -r line; do
-        dprint "private: $host$line.git"
-        dprint "public: $host${line%-private}.git"
-	./tagRepo.sh $tag $host$line.git $host${line%-private}.git
-done <<< $(xmlstarlet sel -t -v "/manifest/project[contains(@name,'-private')]/@name" $manifest)
-
+echo ***Editing Manifest***
 xmlstarlet ed --inplace --pf \
 	-d "/manifest/remote[@name='third']" \
 	-d "/manifest/project[@remote='third']" \
