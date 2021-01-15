@@ -43,8 +43,8 @@
   <!-- revision attribute can be refs/heads/<branch>, refs/tags/<tag>, or a SHA1 -->
   <!-- See https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md#Element-project -->
   
-  <project remote="beacon" revision="refs/tags/1.0.0-RC5" name="meta-beacon-nxp-private" path="sources/meta-beacon-nxp"/>
-  <project remote="beacon" revision="refs/tags/1.0.0-RC5" name="meta-beacon-common-private" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC6" name="meta-beacon-nxp-private" path="sources/meta-beacon-nxp"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC6" name="meta-beacon-common-private" path="sources/meta-beacon-common"/>
   
   <remote fetch="https://bitbucket.logicpd.com/scm/rdpar/"  name="third"/>
   <project remote="third" revision="refs/tags/1.0.0-RC5" name="meta-imx-aacp" path="sources/meta-imx-aacp"/>
