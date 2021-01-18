@@ -46,8 +46,8 @@
   <project remote="beacon" revision="refs/tags/1.0.0-RC6" name="meta-beacon-nxp-private" path="sources/meta-beacon-nxp"/>
   <project remote="beacon" revision="refs/tags/1.0.0-RC6" name="meta-beacon-common-private" path="sources/meta-beacon-common"/>
   
-  <remote fetch="https://bitbucket.logicpd.com/scm/rdpar/"  name="third"/>
-  <project remote="third" revision="refs/tags/1.0.0-RC5" name="meta-imx-aacp" path="sources/meta-imx-aacp"/>
-  <project remote="third" revision="refs/tags/laird-lwb5-fcc-firmware-7.0.0.326" name="laird-firmware" path="release"/>
+  <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="third"/>
+  <project remote="beacon" revision="refs/tags/4.5.1" name="meta-imx-aacp" path="sources/meta-imx-aacp"/>
+  <project remote="beacon" revision="refs/tags/laird-lwb5-fcc-firmware-7.0.0.326" name="laird-firmware" path="release"/>
 
 </manifest>
