@@ -38,16 +38,17 @@
   
   <remote fetch="https://github.com/LairdCP/" name="laird"/>
   <project remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce" name="meta-laird-cp" path="sources/meta-laird-cp"/>
+  <project remote="laird" revision="Sterling-LWB-and-LWB5-Release-Packages/releases" name="laird-lwb5-fcc-firmware-8.5.0.7.tar.bz2" path="release"/>
   
   <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="beacon"/>
   <!-- revision attribute can be refs/heads/<branch>, refs/tags/<tag>, or a SHA1 -->
   <!-- See https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md#Element-project -->
   
-  <project remote="beacon" revision="refs/tags/1.0.0-RC7" name="meta-beacon-nxp-private" path="sources/meta-beacon-nxp"/>
-  <project remote="beacon" revision="refs/tags/1.0.0-RC7" name="meta-beacon-common-private" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC7" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC7" name="meta-beacon-common" path="sources/meta-beacon-common"/>
   
   <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="third"/>
-  <project remote="third" revision="refs/tags/4.5.1" name="meta-imx-aacp-private" path="sources/meta-imx-aacp"/>
-  <project remote="third" revision="refs/tags/laird-lwb5-fcc-firmware-7.0.0.326" name="laird-firmware-private" path="release"/>
+  <!--project remote="third" revision="refs/tags/4.5.1" name="meta-imx-aacp-private" path="sources/meta-imx-aacp"/ -->
+ 
 
 </manifest>
