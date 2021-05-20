@@ -38,13 +38,14 @@
   
   <remote fetch="https://github.com/LairdCP/" name="laird"/>
   <project remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce" name="meta-laird-cp" path="sources/meta-laird-cp"/>
+  <project remote="laird" revision="refs/tags/LRD-REL-7.0.0.326" name="Sterling-LWB-and-LWB5-Release-Packages" path="release"/>
   
   <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="beacon"/>
   <!-- revision attribute can be refs/heads/<branch>, refs/tags/<tag>, or a SHA1 -->
   <!-- See https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md#Element-project -->
   
-  <project remote="beacon" revision="refs/tags/1.0.0" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
-  <project remote="beacon" revision="refs/tags/1.0.0" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC7" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC7" name="meta-beacon-common" path="sources/meta-beacon-common"/>
   
   
   
