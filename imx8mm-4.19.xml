@@ -45,8 +45,8 @@
   <!-- revision attribute can be refs/heads/<branch>, refs/tags/<tag>, or a SHA1 -->
   <!-- See https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md#Element-project -->
   
-  <project remote="beacon" revision="refs/tags/1.0.0-RC8" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
-  <project remote="beacon" revision="refs/tags/1.0.0-RC8" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC9" name="meta-beacon-nxp" path="sources/meta-beacon-nxp"/>
+  <project remote="beacon" revision="refs/tags/1.0.0-RC9" name="meta-beacon-common" path="sources/meta-beacon-common"/>
   
   
   
