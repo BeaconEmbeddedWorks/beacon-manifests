@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="1"/>
+  <default sync-j="2"/>
 
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="git://github.com/openembedded" name="oe"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="git://github.com/renesas-rz"  name="RZ"/>
   <remote fetch="git://git.linaro.org/openembedded"  name="linaro"/>
-  <remote fetch="https://github.com/BeaconEmbeddedWorks/"  name="beacon"/>
+  <remote fetch="ssh://git@bitbucket.logicpd.com:7999/logyo/"  name="beacon"/>
+  <remote fetch="ssh://git@bitbucket.logicpd.com:7999/rdpar/"  name="third"/>
+  <remote fetch="https://github.com/BeaconEmbeddedWorks/"  name="ghbeacon"/>
 
   <project remote="yocto" revision="rocko" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="rocko" name="meta-gplv2" path="sources/meta-gplv2"/>
+
+  <project remote="yocto" revision="rocko" name="meta-virtualization" path="sources/meta-virtualization"/>
 
   <project remote="linaro" revision="rocko" name="meta-linaro" path="sources/meta-linaro"/>
 
@@ -19,16 +23,15 @@
 
   <project remote="QT5" revision="c1b0c9f546289b1592d7a895640de103723a0305" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="RZ" revision="refs/tags/BSP-1.0.4" name="meta-rzg2" path="sources/meta-rzg2"/>
+  <project remote="RZ" revision="refs/tags/BSP-1.0.10-update1" name="meta-rzg2" path="sources/meta-rzg2"/>
 
-  <project remote="beacon" revision="166fc88ac974cfc0d5499f1738fc588397a69771" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
+  <project remote="beacon" revision="beacon_master" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
 
-  <project remote="beacon" revision="refs/tags/production-BSP-1.0.4" name="renesas-proprietary" path="sources/renesas-proprietary"/>
+  <project remote="third" revision="refs/tags/production-BSP-1.0.4" name="renesas-proprietary" path="sources/renesas-proprietary"/>
 
-  <project remote="beacon" revision="3f5ad03988ceaf3508f3e5586bc2cdd55f895187" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="beacon" revision="3cc1dbf6ef1864be40c7e83de0bb678d52fe75fc" name="meta-beacon-common" path="sources/meta-beacon-common"/>
 
-  <remote fetch="https://github.com/LairdCP/" name="laird"/>
-  <project remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce" name="meta-laird-cp" path="sources/meta-laird-cp"/>
-  <project remote="laird" revision="refs/tags/LRD-REL-7.0.0.326" name="Sterling-LWB-and-LWB5-Release-Packages" path="release"/>
+  <project remote="beacon" revision="19ac16d1f26ded451ab9c2c11665092866df96ce" name="meta-laird-cp" path="sources/meta-laird-cp"/>
+  <project remote="third" revision="34c8aa0d99f36b11bf684dc324f54cb2c81c484f" name="laird-firmware" path="release"/>
 
 </manifest>
