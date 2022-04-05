@@ -10,7 +10,7 @@
   
   <default sync-j="2"/>
   
-  <project dest-branch="refs/tags/rzg-1.0.3-RC2" name="meta-beacon-common" path="sources/meta-beacon-common" remote="ghbeacon" revision="11d5621016a7a7852617b4096b28d896aae7ece6" upstream="refs/tags/rzg-1.0.3-RC2"/>
+  <project dest-branch="refs/tags/rzg-1.0.3-RC2" name="meta-beacon-common" path="sources/meta-beacon-common" remote="ghbeacon" revision="39fa448a84437398592ffd71f7654d107e4cc22b" upstream="refs/tags/rzg-1.0.3-RC2"/>
   <project dest-branch="refs/tags/rzg-1.0.3-RC2" name="meta-beacon-rzg" path="sources/meta-beacon-rzg" remote="ghbeacon" revision="c41d6d2b77b9d381efe8e64b1000a931f4dc1b40" upstream="refs/tags/rzg-1.0.3-RC2"/>
   <project dest-branch="rocko" name="meta-gplv2" path="sources/meta-gplv2" remote="yocto" revision="f875c60ecd6f30793b80a431a2423c4b98e51548" upstream="rocko"/>
   <project name="meta-laird-cp" path="sources/meta-laird-cp" remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce"/>
