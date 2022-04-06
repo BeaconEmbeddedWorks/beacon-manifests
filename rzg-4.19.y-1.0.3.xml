@@ -25,9 +25,9 @@
 
   <project remote="RZ" revision="refs/tags/BSP-1.0.10-update1" name="meta-rzg2" path="sources/meta-rzg2"/>
 
-  <project remote="ghbeacon" revision="refs/tags/rzg-1.0.3-RC2" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
+  <project remote="ghbeacon" revision="refs/tags/rzg-1.0.3-RC3" name="meta-beacon-rzg" path="sources/meta-beacon-rzg"/>
 
-  <project remote="ghbeacon" revision="refs/tags/rzg-1.0.3-RC2" name="meta-beacon-common" path="sources/meta-beacon-common"/>
+  <project remote="ghbeacon" revision="refs/tags/rzg-1.0.3-RC3" name="meta-beacon-common" path="sources/meta-beacon-common"/>
 
   <project remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce" name="meta-laird-cp" path="sources/meta-laird-cp"/>
 
