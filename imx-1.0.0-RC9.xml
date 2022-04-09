@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://github.com/meta-qt5" name="QT5"/>
+  <remote fetch="https://github.com/TimesysGit" name="Timesys"/>
+  <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="beacon"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/LairdCP/" name="laird"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/meta-rust" name="rust"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+  
+  <default sync-j="2"/>
+  
+  <project dest-branch="refs/tags/LRD-REL-7.0.0.326" name="Sterling-LWB-and-LWB5-Release-Packages" path="release" remote="laird" revision="3604aca81f5d398f2b87829530ca3ba053764b2a" upstream="refs/tags/LRD-REL-7.0.0.326"/>
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="fd027d8380cf53beabb6d19db3c4f9c36180ce1c">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+  <project dest-branch="refs/tags/1.0.0-RC9" name="meta-beacon-common" path="sources/meta-beacon-common" remote="beacon" revision="3f5ad03988ceaf3508f3e5586bc2cdd55f895187" upstream="refs/tags/1.0.0-RC9"/>
+  <project dest-branch="refs/tags/1.0.0-RC9" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" remote="beacon" revision="9f9e441ac7dc2b2e56b8df08343020c42798e666" upstream="refs/tags/1.0.0-RC9"/>
+  <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="5f365ef0f842ba4651efe88787cf9c63bc8b6cb3"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="yocto" revision="2142f7ded1b3115ccc21f7575fd83e2376247193"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="da422478d38e744283bcf61123c4a526396c7030"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="d4e77ea682fa10d0d54a723b3d3099c44fc5e95c"/>
+  <project name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" remote="CAF" revision="6b237a975521daa1687c5ac49f57da6d32c8c719" upstream="warrior-4.19.35-1.1.0">
+    <linkfile dest="fsl-setup-release.sh" src="imx/tools/fsl-setup-release.sh"/>
+    <linkfile dest="README-IMXBSP" src="imx/README"/>
+  </project>
+  <project name="meta-laird-cp" path="sources/meta-laird-cp" remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="3bdbf72e3a4bf18a4a2c7afbde4f7ab773aeded9"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="dc2dedef9961950b88f4245ba7499538ec4244ab"/>
+  <project name="meta-rust" path="sources/meta-rust" remote="rust" revision="11aed43748d7dd194dc6c06a35a16104400d1090"/>
+  <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="3d53df8f8c8e9d37dfc8d4b03ab4f4bdd415d3d2"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="6d2e12e79211b31cdf5ea824fb9a8be54ba9a9eb"/>
+</manifest>
