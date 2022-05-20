@@ -29,7 +29,7 @@
   <project remote="community" name="meta-freescale-distro" path="sources/meta-freescale-distro" revision="d2e27cc4778663450495a67bfb036cba600cb27a" upstream="honister"/>
 
   <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="c7da8dd576413838738e9ef2deff4d9828497b87" upstream="honister"/>
-  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="67c32d9bf6cb1c6145c5619195ac225603867f1a" upstream="honister"/>
+  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="e34b4d3324516ac8ec34ce4da0014a04273ac2a7" upstream="honister"/>
 
   <project remote="OSSystems" name="meta-browser" path="sources/meta-browser" revision="e22bac72bc1f1bb5d2f44e64a53128b8be644272"/>
   <project remote="clang" name="meta-clang" path="sources/meta-clang" revision="fc5389393adb005b519e488e9e6be4fc5791239c" upstream="honister"/>
