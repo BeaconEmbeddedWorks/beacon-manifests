@@ -14,7 +14,6 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://source.codeaurora.org/external/imxsupport" name="imx-support"/>
   <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="beacon"/>
-  <remote fetch="https://github.com/LairdCP/" name="laird"/>
 
   <project remote="yocto" name="poky" path="sources/poky" revision="4d7162798ec19c726877e85509e4c7a99eb6576d" upstream="honister"/>
 
@@ -28,11 +27,9 @@
   <project remote="community" name="meta-freescale" path="sources/meta-freescale" revision="ed3435620a2404c241fef3c4ef90d1f31d3b7a8a" upstream="honister"/>
   <project remote="community" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" revision="155ffd6d7b694d8de76919c25681ecb98882646e" upstream="honister"/>
   <project remote="community" name="meta-freescale-distro" path="sources/meta-freescale-distro" revision="d2e27cc4778663450495a67bfb036cba600cb27a" upstream="honister"/>
-  
-  <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="refs/heads/honister" upstream="honister" dest-branch="honister"/>
-  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="refs/heads/honister" upstream="honister" dest-branch="honister"/>
-  <project remote="laird"  name="meta-laird-cp" path="sources/meta-laird-cp" revision="0949059e620d44f5b2bbe81b4e8edc441a05f741" upstream="lrd-10.0.0.x" />
-  
+
+  <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="c7da8dd576413838738e9ef2deff4d9828497b87" upstream="honister"/>
+  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="67c32d9bf6cb1c6145c5619195ac225603867f1a" upstream="honister"/>
 
   <project remote="OSSystems" name="meta-browser" path="sources/meta-browser" revision="e22bac72bc1f1bb5d2f44e64a53128b8be644272"/>
   <project remote="clang" name="meta-clang" path="sources/meta-clang" revision="fc5389393adb005b519e488e9e6be4fc5791239c" upstream="honister"/>
