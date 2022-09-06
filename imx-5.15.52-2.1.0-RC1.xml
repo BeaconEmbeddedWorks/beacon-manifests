@@ -10,9 +10,9 @@
   <remote fetch="https://github.com/kraj" name="clang"/>
   <remote fetch="https://github.com/Freescale" name="community"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://git.yoctoproject.org/" name="yocto"/>
   <remote fetch="https://source.codeaurora.org/external/imxsupport" name="imx-support"/>
-  <remote fetch="https://gitlab.logicpd.com/products/" name="beacon"/>
+  <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="beacon"/>
   <remote fetch="https://github.com/LairdCP/" name="laird"/>
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
@@ -25,8 +25,8 @@
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="de0eb1408150d77f9cce97c559f9a5a3c71e5d6c" upstream="kirkstone"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="fc15f5003043da23212596be7366ae2547c308ad" upstream="kirkstone"/>
   
-  <project remote="beacon" name="meta-beacon-common-private" path="sources/meta-beacon-common" revision="e979ee5e67b61d07724404dfaa9099153045c91c" dest-branch="kirkstone"/>
-  <project remote="beacon" name="meta-beacon-nxp-private" path="sources/meta-beacon-nxp" revision="9ab8f29a07b3a48428639f6fb11854b3d03ff23f" dest-branch="kirkstone"/>
+  <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="e979ee5e67b61d07724404dfaa9099153045c91c" dest-branch="kirkstone"/>
+  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="dac36a3bbc30fc30981ea0f4ee41cccd0b60d34a" dest-branch="kirkstone"/>
   <project remote="laird"  name="meta-laird-cp" path="sources/meta-laird-cp" revision="0949059e620d44f5b2bbe81b4e8edc441a05f741" upstream="lrd-10.0.0.x" />
   
 
