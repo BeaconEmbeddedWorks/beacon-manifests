@@ -3,19 +3,19 @@
 
   <default sync-j="2"/>
 
-  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
   <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="https://code.qt.io/yocto"  name="QT6"/>
   <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
   <remote fetch="https://github.com/Freescale" name="community"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://git.yoctoproject.org/" name="yocto"/>
-  <remote fetch="https://source.codeaurora.org/external/imxsupport" name="imx-support"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
   <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="beacon"/>
   <remote fetch="https://github.com/LairdCP/" name="laird"/>
 
-  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
+ <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
     <linkfile dest="README" src="README"/>
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
@@ -30,7 +30,7 @@
   <project remote="laird"  name="meta-laird-cp" path="sources/meta-laird-cp" revision="0949059e620d44f5b2bbe81b4e8edc441a05f741" upstream="lrd-10.0.0.x" />
   
 
-  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="refs/tags/rel_imx_5.15.32_2.0.0" upstream="kirkstone-5.15.32-2.0.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.32_2.0.0_gh" upstream="kirkstone-5.15.32-2.0.0">
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>
