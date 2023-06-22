@@ -25,7 +25,7 @@
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
 
-  <project remote="community" name="meta-freescale" path="sources/meta-freescale" revision="ed3435620a2404c241fef3c4ef90d1f31d3b7a8a" upstream="honister"/>
+  <project remote="community" name="meta-freescale" path="sources/meta-freescale" revision="66635782a4968cc9fcb58a07e1821cc910245a80" upstream="honister"/>
   <project remote="community" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" revision="155ffd6d7b694d8de76919c25681ecb98882646e" upstream="honister"/>
   <project remote="community" name="meta-freescale-distro" path="sources/meta-freescale-distro" revision="d2e27cc4778663450495a67bfb036cba600cb27a" upstream="honister"/>
   
