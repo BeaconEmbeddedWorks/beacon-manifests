@@ -27,7 +27,7 @@
   
   <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="a9640451937940b74f4460889ee873a767153452" dest-branch="Kirkstone"/>
   <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="4ace51ec685fa7f55c1fdbc372d60ed7d43abbbb" dest-branch="kirkstone"/>
-  <project remote="laird"  name="meta-laird-cp" path="sources/meta-laird-cp" revision="0949059e620d44f5b2bbe81b4e8edc441a05f741" upstream="lrd-10.0.0.x" />
+  <project remote="laird"  name="meta-summit-radio" path="sources/meta-laird-cp" revision="0949059e620d44f5b2bbe81b4e8edc441a05f741" upstream="lrd-10.0.0.x" />
   
 
   <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.32_2.0.0_gh" upstream="kirkstone-5.15.32-2.0.0">
