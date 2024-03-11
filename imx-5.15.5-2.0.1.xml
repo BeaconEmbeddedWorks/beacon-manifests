@@ -31,7 +31,7 @@
   
   <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="c7da8dd576413838738e9ef2deff4d9828497b87" upstream="honister" dest-branch="honister"/>
   <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="e293a45227988f3c8e2d9f4966c7123a6c1088ec" upstream="honister" dest-branch="honister"/>
-  <project remote="laird"  name="meta-laird-cp" path="sources/meta-laird-cp" revision="0949059e620d44f5b2bbe81b4e8edc441a05f741" upstream="lrd-10.0.0.x" />
+  <project remote="laird"  name="meta-summit-radio" path="sources/meta-laird-cp" revision="0949059e620d44f5b2bbe81b4e8edc441a05f741" upstream="lrd-10.0.0.x" />
   
 
   <project remote="OSSystems" name="meta-browser" path="sources/meta-browser" revision="e22bac72bc1f1bb5d2f44e64a53128b8be644272"/>
