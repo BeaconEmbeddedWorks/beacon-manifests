@@ -13,7 +13,7 @@
   <project dest-branch="refs/tags/rzg-1.0.4" name="meta-beacon-common" path="sources/meta-beacon-common" remote="ghbeacon" revision="8ca7b6d38bd329e94dc94857690ea0e778c22c4e" upstream="refs/tags/rzg-1.0.4"/>
   <project dest-branch="refs/tags/rzg-1.0.4" name="meta-beacon-rzg" path="sources/meta-beacon-rzg" remote="ghbeacon" revision="ee8c8ed61e6c8a518293feff01e51ea886fa56e8" upstream="refs/tags/rzg-1.0.4"/>
   <project dest-branch="rocko" name="meta-gplv2" path="sources/meta-gplv2" remote="yocto" revision="f875c60ecd6f30793b80a431a2423c4b98e51548" upstream="rocko"/>
-  <project name="meta-laird-cp" path="sources/meta-laird-cp" remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce"/>
+  <project name="meta-summit-radio" path="sources/meta-laird-cp" remote="laird" revision="19ac16d1f26ded451ab9c2c11665092866df96ce"/>
   <project dest-branch="rocko" name="meta-linaro" path="sources/meta-linaro" remote="linaro" revision="cd9ee776044a2d8943be4cb019f063271e9c684d" upstream="rocko"/>
   <project dest-branch="rocko" name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="eae996301d9c097bcbeb8046f08041dc82bb62f8" upstream="rocko"/>
   <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="c1b0c9f546289b1592d7a895640de103723a0305"/>
