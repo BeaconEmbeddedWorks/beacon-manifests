@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/meta-qt5" name="QT5"/>
+  <remote fetch="https://github.com/renesas-rz" name="RZ"/>
+  <remote fetch="https://github.com/BeaconEmbeddedWorks/" name="ghbeacon"/>
+  <remote fetch="https://github.com/LairdCP/" name="laird"/>
+  <remote fetch="https://git.linaro.org/openembedded" name="linaro"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://git.yoctoproject.org" name="yocto"/>
+   <remote fetch="ssh://git@gitlab.logicpd.com/products" name="beacon_gl"/>
+  
+  <default sync-j="2"/>
+  
+  <project dest-branch="Kirkstone" name="meta-beacon-common" path="sources/meta-beacon-common" remote="ghbeacon" revision="a9640451937940b74f4460889ee873a767153452" upstream="Kirkstone"/>
+  <project dest-branch="kirkstone" name="meta-beacon-rzg" path="sources/meta-beacon-rzg" remote="beacon_gl" revision="66edfe746df6839f28639dd4dfdd7297cd1f7c21" upstream="kirkstone"/>
+  <project dest-branch="kirkstone" name="meta-gplv2" path="sources/meta-gplv2" remote="yocto" revision="d2f8b5cdb285b72a4ed93450f6703ca27aa42e8a" upstream="kirkstone"/>
+  <project name="meta-summit-radio" path="sources/meta-summit-radio" remote="laird" revision="9caefc770bc6f9f5362c2918f1050f78c24e171a"/>
+  <project dest-branch="kirkstone" name="meta-renesas" path="sources/meta-renesas" remote="beacon_gl" revision="b2de1c7a0bd4343dacd1d93341419f79cb99d22a" upstream="kirkstone"/>
+  <project dest-branch="kirkstone" name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="5f120a926b0fcd55cfe7565bb7ddf23661cad498" upstream="kirkstone"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="bff5bd937f0776166e81a63f3dd39ede348ef758"/>
+  <project dest-branch="refs/tags/BSP-1.0.10-update1" name="meta-rzg2" path="sources/meta-rzg2" remote="RZ" revision="a9640451937940b74f4460889ee873a767153452" upstream="refs/tags/BSP-1.0.10-update1"/>
+  <project dest-branch="kirkstone" name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="9d056f957b42e31f1c2c5bad0af1ab6c84b53ee6" upstream="kirkstone"/>
+  <project dest-branch="kirkstone" name="poky" path="sources/poky" remote="yocto" revision="43b94d2b8496eae6e512c6deb291b5908b7ada47" upstream="kirkstone"/>
+  <project dest-branch="kirkstone" name="meta-rz-features" path="sources/meta-rz-features" remote="beacon_gl" revision="faf81eace1357bfd7287fb203664246486832722" upstream="kirkstone"/>
+
+</manifest>
