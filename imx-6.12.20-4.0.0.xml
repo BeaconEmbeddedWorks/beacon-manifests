@@ -44,6 +44,6 @@
   <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.12.20_2.0.0" upstream="walnascar-6.12.20-2.0.0" />
 
   <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="1237825ddb5d585daae813e65f1eda2b09197fa3" upstream="walnascar-6.12"/>
-  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="28eaaf5c9bf861e3a2956f6d4cc43f261c8017dc" upstream="walnascar-6.12"/>
+  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="19088b82e089bfbaade13f77b62066d532ae23d8" upstream="walnascar-6.12"/>
   
 </manifest>
