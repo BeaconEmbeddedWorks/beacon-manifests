@@ -45,7 +45,7 @@
 
   <project remote="beacon" name="meta-beacon-common" path="sources/meta-beacon-common" revision="aa26e42642356b4fea4bbfac1bf63ee2382abe12" upstream="bcn-scarthgap-6.6">
   </project>
-  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="67c2cf36026383e605c34a8bef681c9260bd0be2" upstream="bcn-scarthgap-6.6">
+  <project remote="beacon" name="meta-beacon-nxp" path="sources/meta-beacon-nxp" revision="76560b66b824edd129a99c4dca51467f162db8ce" upstream="bcn-scarthgap-6.6">
   <linkfile src="setup_beacon.sh" dest="setup_beacon.sh"/>
   </project>
 
